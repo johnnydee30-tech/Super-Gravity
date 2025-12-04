@@ -1,0 +1,8 @@
+playwright
+playwright-stealth
+pandas
+openpyxl
+requests
+fake-useragent
+beautifulsoup4
+streamlit
