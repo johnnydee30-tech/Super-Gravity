@@ -2,9 +2,12 @@ import re
 from proxy_manager import ProxyManager
 from playwright.sync_api import sync_playwright
 try:
-    from playwright_stealth import stealth_sync
+    from stealth import stealth_sync
 except ImportError:
-    from playwright_stealth.stealth import stealth_sync
+    try:
+        from playwright_stealth import stealth_sync
+    except ImportError:
+        from playwright_stealth.stealth import stealth_sync
 import time
 import random
 import logging
